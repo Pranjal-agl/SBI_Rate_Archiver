@@ -1,0 +1,6 @@
+Bank,Slab_Type,Rate,Date
+HDFC,Cash Buying,94.24,2026-03-24
+SBI,"less than $2,500",92.52,2026-03-24
+SBI,"$2,500 to less than $5,000",92.52,2026-03-24
+SBI,"$5,000 to less than $25,000",92.62,2026-03-24
+SBI,"$25,000 to less than $100,000",92.73,2026-03-24
