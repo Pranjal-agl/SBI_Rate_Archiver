@@ -2,15 +2,12 @@ name: Daily Forex Scrape
 
 on:
   schedule:
-    # 04:00 UTC = ~09:30 IST (after Indian markets open)
     - cron: "0 4 * * *"
   workflow_dispatch:
-    inputs:
-      banks:
-        description: "Banks to fetch (space-separated: sbi hdfc icici)"
-        required: false
-        default: "sbi hdfc icici"
-
+  push:
+    branches:
+      - main
+      
 permissions:
   contents: write
 
