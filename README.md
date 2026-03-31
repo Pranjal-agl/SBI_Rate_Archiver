@@ -1,4 +1,4 @@
-# 💱 Forex Rate Archiver
+# Forex Rate Archiver
 
 > **Automated daily archival of USD → INR exchange rates** from SBI New York, HDFC Bank, and ICICI Bank — with historical analytics dashboard, structured logging, and zero-touch GitHub Actions CI/CD.
 
