@@ -1,5 +1,4 @@
 name: Daily Forex Scrape
-
 on:
   schedule:
     - cron: "0 4 * * *"
@@ -7,7 +6,7 @@ on:
   push:
     branches:
       - main
-      
+
 permissions:
   contents: write
 
@@ -15,7 +14,6 @@ jobs:
   scrape-and-commit:
     runs-on: ubuntu-latest
     timeout-minutes: 20
-
     steps:
       # ── Setup ──────────────────────────────────────────────────────────────
       - name: Checkout repository
@@ -42,7 +40,7 @@ jobs:
           BANKS="${{ github.event.inputs.banks || 'sbi hdfc icici' }}"
           python main.py --banks $BANKS
           echo "exit_code=$?" >> "$GITHUB_OUTPUT"
-        continue-on-error: true   # we handle the exit code ourselves below
+        continue-on-error: true
 
       # ── Artifacts ──────────────────────────────────────────────────────────
       - name: Upload daily Excel as workflow artifact
@@ -61,14 +59,16 @@ jobs:
         run: |
           git config --global user.name  "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ all_rates_history.csv archiver.log || true
-          git diff --quiet && git diff --staged --quiet \
-            || git commit -m "chore: auto-update rates $(date +'%Y-%m-%d') [skip ci]"
+          echo "Last run: $(date +'%Y-%m-%d %H:%M:%S UTC')" > last_run.txt
+          git add data/ all_rates_history.csv archiver.log last_run.txt || true
+          git diff --staged --quiet \
+            && echo "No changes to commit" \
+            || git commit -m "data: forex rates $(date +'%Y-%m-%d %H:%M IST')"
           git push
 
       # ── Failure gate ───────────────────────────────────────────────────────
       - name: Fail job if scraper returned exit code 1 (total failure)
         if: steps.scrape.outputs.exit_code == '1'
         run: |
-          echo "❌ Scraper returned exit code 1: no data was fetched from any bank."
+          echo " Scraper returned exit code 1: no data was fetched from any bank."
           exit 1
