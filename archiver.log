@@ -1748,3 +1748,69 @@
 2026-04-28 09:15:18 | INFO     | storage | Daily Excel saved → data/2026/forex_rates_2026-04-28.xlsx  (5 rows)
 2026-04-28 09:15:18 | INFO     | storage | Master CSV updated → all_rates_history.csv  (+0 new rows, 175 total)
 2026-04-28 09:15:18 | WARNING  | main | ⚠️  Partial failure — these banks returned no data: ICICI
+2026-04-28 09:17:53 | INFO     | main | =======================================================
+2026-04-28 09:17:53 | INFO     | main |   Forex Rate Archiver  |  2026-04-28
+2026-04-28 09:17:53 | INFO     | main |   Banks: SBI, HDFC, ICICI
+2026-04-28 09:17:53 | INFO     | main | =======================================================
+2026-04-28 09:17:53 | INFO     | scrapers.sbi | SBI fetch attempt 1/3 …
+2026-04-28 09:17:53 | INFO     | WDM | ====== WebDriver manager ======
+2026-04-28 09:17:53 | INFO     | scrapers.icici | ICICI fetch attempt 1/3 …
+2026-04-28 09:17:53 | INFO     | WDM | ====== WebDriver manager ======
+2026-04-28 09:17:55 | WARNING  | scrapers.hdfc | HDFC: PDF URL discovery failed: 404 Client Error: Not Found for url: https://www.hdfcbank.com/personal/resources/rates-and-fees/forex-rates
+2026-04-28 09:17:55 | WARNING  | scrapers.hdfc | HDFC: using fallback PDF URL.
+2026-04-28 09:17:55 | INFO     | scrapers.hdfc | HDFC fetch attempt 1/3 — URL: https://www.hdfcbank.com/content/bbp/repositories/723fb80a-2dde-42a3-9793-7ae1be57c87f/?path=%2FPersonal%2FHome%2Fcontent%2Frates.pdf
+2026-04-28 09:17:56 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-04-28 09:17:56 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-04-28 09:17:56 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-04-28 09:17:56 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-04-28 09:17:56 | INFO     | WDM | There is no [linux64] chromedriver "147.0.7727.117" for browser google-chrome "147.0.7727" in cache
+2026-04-28 09:17:56 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-04-28 09:17:56 | INFO     | WDM | There is no [linux64] chromedriver "147.0.7727.117" for browser google-chrome "147.0.7727" in cache
+2026-04-28 09:17:56 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-04-28 09:17:56 | INFO     | scrapers.hdfc | HDFC: USD Cash Buying = 94.2400
+2026-04-28 09:17:56 | INFO     | main | ✓ HDFC   → 1 record(s)
+2026-04-28 09:17:56 | INFO     | WDM | WebDriver version 147.0.7727.117 selected
+2026-04-28 09:17:56 | INFO     | WDM | Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/linux64/chromedriver-linux64.zip
+2026-04-28 09:17:56 | INFO     | WDM | About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/linux64/chromedriver-linux64.zip
+2026-04-28 09:17:56 | INFO     | WDM | WebDriver version 147.0.7727.117 selected
+2026-04-28 09:17:56 | INFO     | WDM | Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/linux64/chromedriver-linux64.zip
+2026-04-28 09:17:56 | INFO     | WDM | About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/linux64/chromedriver-linux64.zip
+2026-04-28 09:17:56 | INFO     | WDM | Driver downloading response is 200
+2026-04-28 09:17:56 | INFO     | WDM | Driver downloading response is 200
+2026-04-28 09:17:57 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-04-28 09:17:57 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-04-28 09:17:57 | ERROR    | scrapers.icici | ICICI attempt 1 failed: tuple index out of range
+2026-04-28 09:17:57 | INFO     | scrapers.icici | Retrying ICICI in 2s …
+2026-04-28 09:17:57 | INFO     | WDM | Driver has been saved in cache [/home/runner/.wdm/drivers/chromedriver/linux64/147.0.7727.117]
+2026-04-28 09:17:59 | INFO     | scrapers.icici | ICICI fetch attempt 2/3 …
+2026-04-28 09:17:59 | INFO     | WDM | ====== WebDriver manager ======
+2026-04-28 09:17:59 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-04-28 09:17:59 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-04-28 09:17:59 | INFO     | WDM | Driver [/home/runner/.wdm/drivers/chromedriver/linux64/147.0.7727.117/chromedriver-linux64/chromedriver] found in cache
+2026-04-28 09:18:19 | INFO     | scrapers.sbi | SBI: fetched 4 slab(s).
+2026-04-28 09:18:19 | INFO     | main | ✓ SBI    → 4 record(s)
+2026-04-28 09:18:28 | WARNING  | scrapers.icici | ICICI: timed out waiting for table.
+2026-04-28 09:18:28 | WARNING  | scrapers.icici | ICICI attempt 2: 0 records found.
+2026-04-28 09:18:28 | INFO     | scrapers.icici | Retrying ICICI in 4s …
+2026-04-28 09:18:32 | INFO     | scrapers.icici | ICICI fetch attempt 3/3 …
+2026-04-28 09:18:32 | INFO     | WDM | ====== WebDriver manager ======
+2026-04-28 09:18:32 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-04-28 09:18:32 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-04-28 09:18:32 | INFO     | WDM | Driver [/home/runner/.wdm/drivers/chromedriver/linux64/147.0.7727.117/chromedriver-linux64/chromedriver] found in cache
+2026-04-28 09:19:00 | WARNING  | scrapers.icici | ICICI: timed out waiting for table.
+2026-04-28 09:19:00 | WARNING  | scrapers.icici | ICICI attempt 3: 0 records found.
+2026-04-28 09:19:00 | ERROR    | scrapers.icici | ICICI: all 3 attempts exhausted.
+2026-04-28 09:19:00 | WARNING  | main | ✗ ICICI  → 0 records (scraper returned empty)
+2026-04-28 09:19:00 | INFO     | main | 
+───────────────────────────────────────────────────────
+2026-04-28 09:19:00 | INFO     | main |   BANK     SLAB / TYPE            USD → INR
+2026-04-28 09:19:00 | INFO     | main | ───────────────────────────────────────────────────────
+2026-04-28 09:19:00 | INFO     | main |   HDFC     Cash Buying            ₹ 94.2400
+2026-04-28 09:19:00 | INFO     | main |   SBI      $2,500 to less than $5,000 ₹ 93.3900
+2026-04-28 09:19:00 | INFO     | main |   SBI      $25,000 to less than $100,000 ₹ 93.6200
+2026-04-28 09:19:00 | INFO     | main |   SBI      $5,000 to less than $25,000 ₹ 93.5100
+2026-04-28 09:19:00 | INFO     | main |   SBI      less than $2,500       ₹ 93.3900
+2026-04-28 09:19:00 | INFO     | main | ───────────────────────────────────────────────────────
+2026-04-28 09:19:00 | INFO     | storage | Daily Excel saved → data/2026/forex_rates_2026-04-28.xlsx  (5 rows)
+2026-04-28 09:19:00 | INFO     | storage | Master CSV updated → all_rates_history.csv  (+0 new rows, 175 total)
+2026-04-28 09:19:00 | WARNING  | main | ⚠️  Partial failure — these banks returned no data: ICICI
