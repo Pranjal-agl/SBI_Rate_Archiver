@@ -2925,3 +2925,73 @@
 2026-05-13 06:50:47 | INFO     | storage | Daily Excel saved → data/2026/forex_rates_2026-05-13.xlsx  (4 rows)
 2026-05-13 06:50:47 | INFO     | storage | Master CSV updated → all_rates_history.csv  (+4 new rows, 232 total)
 2026-05-13 06:50:47 | WARNING  | main | ⚠️  Partial failure — these banks returned no data: HDFC, ICICI
+2026-05-14 06:47:22 | INFO     | main | =======================================================
+2026-05-14 06:47:22 | INFO     | main |   Forex Rate Archiver  |  2026-05-14
+2026-05-14 06:47:22 | INFO     | main |   Banks: SBI, HDFC, ICICI
+2026-05-14 06:47:22 | INFO     | main | =======================================================
+2026-05-14 06:47:22 | INFO     | scrapers.sbi | SBI fetch attempt 1/3 …
+2026-05-14 06:47:22 | INFO     | WDM | ====== WebDriver manager ======
+2026-05-14 06:47:22 | INFO     | scrapers.icici | ICICI fetch attempt 1/3 …
+2026-05-14 06:47:22 | INFO     | WDM | ====== WebDriver manager ======
+2026-05-14 06:47:24 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-05-14 06:47:24 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-05-14 06:47:24 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-05-14 06:47:24 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-05-14 06:47:24 | INFO     | WDM | There is no [linux64] chromedriver "147.0.7727.117" for browser google-chrome "147.0.7727" in cache
+2026-05-14 06:47:24 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-05-14 06:47:24 | INFO     | WDM | There is no [linux64] chromedriver "147.0.7727.117" for browser google-chrome "147.0.7727" in cache
+2026-05-14 06:47:24 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-05-14 06:47:25 | INFO     | WDM | WebDriver version 147.0.7727.117 selected
+2026-05-14 06:47:25 | INFO     | WDM | WebDriver version 147.0.7727.117 selected
+2026-05-14 06:47:25 | INFO     | WDM | Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/linux64/chromedriver-linux64.zip
+2026-05-14 06:47:25 | INFO     | WDM | Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/linux64/chromedriver-linux64.zip
+2026-05-14 06:47:25 | INFO     | WDM | About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/linux64/chromedriver-linux64.zip
+2026-05-14 06:47:25 | INFO     | WDM | About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/linux64/chromedriver-linux64.zip
+2026-05-14 06:47:25 | INFO     | WDM | Driver downloading response is 200
+2026-05-14 06:47:25 | INFO     | WDM | Driver downloading response is 200
+2026-05-14 06:47:25 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-05-14 06:47:25 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-05-14 06:47:25 | ERROR    | scrapers.icici | ICICI attempt 1 failed: tuple index out of range
+2026-05-14 06:47:25 | INFO     | scrapers.icici | Retrying ICICI in 2s …
+2026-05-14 06:47:25 | INFO     | WDM | Driver has been saved in cache [/home/runner/.wdm/drivers/chromedriver/linux64/147.0.7727.117]
+2026-05-14 06:47:25 | WARNING  | scrapers.hdfc | HDFC: PDF URL discovery failed: 520 Server Error: <none> for url: https://www.hdfcbank.com/personal/resources/rates-and-fees/forex-rates
+2026-05-14 06:47:25 | WARNING  | scrapers.hdfc | HDFC: using fallback PDF URL.
+2026-05-14 06:47:25 | INFO     | scrapers.hdfc | HDFC fetch attempt 1/3 — URL: https://www.hdfcbank.com/content/bbp/repositories/723fb80a-2dde-42a3-9793-7ae1be57c87f/?path=%2FPersonal%2FHome%2Fcontent%2Frates.pdf
+2026-05-14 06:47:27 | INFO     | scrapers.icici | ICICI fetch attempt 2/3 …
+2026-05-14 06:47:27 | INFO     | WDM | ====== WebDriver manager ======
+2026-05-14 06:47:27 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-05-14 06:47:27 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-05-14 06:47:27 | INFO     | WDM | Driver [/home/runner/.wdm/drivers/chromedriver/linux64/147.0.7727.117/chromedriver-linux64/chromedriver] found in cache
+2026-05-14 06:47:29 | ERROR    | scrapers.hdfc | HDFC attempt 1 HTTP error: 520 Server Error: <none> for url: https://www.hdfcbank.com/content/bbp/repositories/723fb80a-2dde-42a3-9793-7ae1be57c87f/?path=%2FPersonal%2FHome%2Fcontent%2Frates.pdf
+2026-05-14 06:47:29 | INFO     | scrapers.hdfc | HDFC fetch attempt 2/3 — URL: https://www.hdfcbank.com/content/bbp/repositories/723fb80a-2dde-42a3-9793-7ae1be57c87f/?path=%2FPersonal%2FHome%2Fcontent%2Frates.pdf
+2026-05-14 06:47:33 | ERROR    | scrapers.hdfc | HDFC attempt 2 HTTP error: 520 Server Error: <none> for url: https://www.hdfcbank.com/content/bbp/repositories/723fb80a-2dde-42a3-9793-7ae1be57c87f/?path=%2FPersonal%2FHome%2Fcontent%2Frates.pdf
+2026-05-14 06:47:33 | INFO     | scrapers.hdfc | HDFC fetch attempt 3/3 — URL: https://www.hdfcbank.com/content/bbp/repositories/723fb80a-2dde-42a3-9793-7ae1be57c87f/?path=%2FPersonal%2FHome%2Fcontent%2Frates.pdf
+2026-05-14 06:47:36 | ERROR    | scrapers.hdfc | HDFC attempt 3 HTTP error: 520 Server Error: <none> for url: https://www.hdfcbank.com/content/bbp/repositories/723fb80a-2dde-42a3-9793-7ae1be57c87f/?path=%2FPersonal%2FHome%2Fcontent%2Frates.pdf
+2026-05-14 06:47:36 | ERROR    | scrapers.hdfc | HDFC: all 3 attempts exhausted.
+2026-05-14 06:47:36 | WARNING  | main | ✗ HDFC   → 0 records (scraper returned empty)
+2026-05-14 06:47:49 | INFO     | scrapers.sbi | SBI: fetched 4 slab(s).
+2026-05-14 06:47:49 | INFO     | main | ✓ SBI    → 4 record(s)
+2026-05-14 06:48:00 | WARNING  | scrapers.icici | ICICI: timed out waiting for table.
+2026-05-14 06:48:00 | WARNING  | scrapers.icici | ICICI attempt 2: 0 records found.
+2026-05-14 06:48:00 | INFO     | scrapers.icici | Retrying ICICI in 4s …
+2026-05-14 06:48:04 | INFO     | scrapers.icici | ICICI fetch attempt 3/3 …
+2026-05-14 06:48:04 | INFO     | WDM | ====== WebDriver manager ======
+2026-05-14 06:48:04 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-05-14 06:48:04 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+2026-05-14 06:48:04 | INFO     | WDM | Driver [/home/runner/.wdm/drivers/chromedriver/linux64/147.0.7727.117/chromedriver-linux64/chromedriver] found in cache
+2026-05-14 06:48:32 | WARNING  | scrapers.icici | ICICI: timed out waiting for table.
+2026-05-14 06:48:32 | WARNING  | scrapers.icici | ICICI attempt 3: 0 records found.
+2026-05-14 06:48:32 | ERROR    | scrapers.icici | ICICI: all 3 attempts exhausted.
+2026-05-14 06:48:32 | WARNING  | main | ✗ ICICI  → 0 records (scraper returned empty)
+2026-05-14 06:48:32 | INFO     | main | 
+───────────────────────────────────────────────────────
+2026-05-14 06:48:32 | INFO     | main |   BANK     SLAB / TYPE            USD → INR
+2026-05-14 06:48:32 | INFO     | main | ───────────────────────────────────────────────────────
+2026-05-14 06:48:32 | INFO     | main |   SBI      $2,500 to less than $5,000 ₹ 95.0500
+2026-05-14 06:48:32 | INFO     | main |   SBI      $25,000 to less than $100,000 ₹ 95.1900
+2026-05-14 06:48:32 | INFO     | main |   SBI      $5,000 to less than $25,000 ₹ 95.1500
+2026-05-14 06:48:32 | INFO     | main |   SBI      less than $2,500       ₹ 95.0500
+2026-05-14 06:48:32 | INFO     | main | ───────────────────────────────────────────────────────
+2026-05-14 06:48:32 | INFO     | storage | Daily Excel saved → data/2026/forex_rates_2026-05-14.xlsx  (4 rows)
+2026-05-14 06:48:32 | INFO     | storage | Master CSV updated → all_rates_history.csv  (+4 new rows, 236 total)
+2026-05-14 06:48:32 | WARNING  | main | ⚠️  Partial failure — these banks returned no data: HDFC, ICICI
