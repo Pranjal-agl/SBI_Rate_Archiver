@@ -2,7 +2,7 @@
 
 > **Automated daily archival of USD → INR exchange rates** from SBI New York, HDFC Bank, and ICICI Bank — with historical analytics dashboard, structured logging, and zero-touch GitHub Actions CI/CD.
 
-[![Daily Forex Scrape](https://github.com/<your-username>/SBI_Rate_Archiver/actions/workflows/daily_scrape.yml/badge.svg)](https://github.com/<your-username>/SBI_Rate_Archiver/actions)
+[![Daily Forex Scrape](https://github.com/Pranjal-agl/SBI_Rate_Archiver/actions/workflows/daily_scrape.yml/badge.svg)](https://github.com/<your-username>/SBI_Rate_Archiver/actions)
 ![Python](https://img.shields.io/badge/python-3.11-blue?logo=python)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
